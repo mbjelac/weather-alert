@@ -1,0 +1,11 @@
+name: Check & send alert
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-for-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download alerts file
+        run: echo Hello, world!
