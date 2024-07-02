@@ -1,6 +1,6 @@
 # Automated DHMZ weather alert
 
-DHMZ - the Croatian meteorological society - doesn't have an automated way of sending weather alerts. I suppose the weather in Croatia has not been so critical so this hasn't been so important.
+[DHMZ](https://meteo.hr/) - the Croatian meteorological society - doesn't have an automated way of sending weather alerts. I suppose the weather in Croatia has not been so critical so this hasn't been so important.
 
 However, in the last years we have been getting more and more extreme weather events, so I assembled a little automated alert sender.
 
