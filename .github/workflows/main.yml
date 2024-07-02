@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Download XML
         run: |
-        curl https://meteo.hr/upozorenja/cap_hr_today.xml > alerts.xml
-        cat alerts.xml
+          curl https://meteo.hr/upozorenja/cap_hr_today.xml > alerts.xml
+          cat alerts.xml
       - name: Parse XML
         id: parse
         run: |
