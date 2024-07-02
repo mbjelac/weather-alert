@@ -16,9 +16,8 @@ jobs:
           xml-file: 'test.xml'
           # xpath: '//version'
       - name: Output xml
-        run:
+        run: |
           echo "The parsed xml is: ${{ steps.getxml.outputs.info }}"
-
 
   send-email:
     if: false
