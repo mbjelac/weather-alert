@@ -10,34 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Parse XML
+        id: parse
         run: |
           yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "Title: \(.event)\nDate: \(.onset)\nDescription: \(.description)\nInstructions: \(.instruction)\n"' test.xml > output.txt
+          echo "size=$(stat -c%s output.txt)" >> $GITHUB_OUTPUT
           cat output.txt
-      - name: Delete output if empty
-        run: |
-          file="output.txt"
-          # Check if the file exists
-          if [ -f "$file" ]; then
-            # Get the file size in bytes
-            filesize=$(stat -c%s "$file")
-            
-            # Check if the file size is 45 bytes or less
-            if [ $filesize -le 45 ]; then
-              # Delete the file
-              rm "$file"
-              echo "File '$file' deleted."
-            else
-              echo "File '$file' is larger than 45 bytes and was not deleted."
-            fi
-          else
-            echo "File '$file' does not exist."
-          fi
-
-  send-email:
-    if: false
-    runs-on: ubuntu-latest
-    steps:
       - name: Send mail
+        if: steps.parse.size > 45
         uses: dawidd6/action-send-mail@v3
         with:
           # Specify connection via URL (replaces server_address, server_port, secure,
@@ -65,9 +44,9 @@ jobs:
           # Required sender full name (address can be skipped):
           from: Marko Bjelac
           # Optional plain body:
-          body: Build job of ${{github.repository}} completed successfully!
+          # body: Build job of ${{github.repository}} completed successfully!
           # Optional HTML body read from file:
-          # html_body: file://README.html
+          html_body: file://output.txt
           # Optional carbon copy recipients:
           # cc: kyloren@example.com,leia@example.com
           # Optional blind carbon copy recipients:
