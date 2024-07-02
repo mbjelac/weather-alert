@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  parse-xml:
+  parse-and-send-alerts:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,11 +12,11 @@ jobs:
       - name: Parse XML
         id: parse
         run: |
-          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "Title: \(.event)\nDate: \(.onset)\nDescription: \(.description)\nInstructions: \(.instruction)\n"' test.xml > output.txt
-          size=$(stat -c%s output.txt)
+          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "<p><h1>\(.event)</h1><p><b>\(.onset)</b></p><p>\(.description)</p><p>\(.instruction)</p></p>"' test.xml > output.html
+          size=$(stat -c%s output.html)
           echo "File size: $size"
           echo "size=$size" >> $GITHUB_OUTPUT
-          cat output.txt
+          cat output.html
       - name: Send mail
         if: steps.parse.outputs.size > 45
         uses: dawidd6/action-send-mail@v3
@@ -40,7 +40,7 @@ jobs:
           # Optional (recommended) mail server password:
           # password: ${{secrets.MAIL_PASSWORD}}
           # Required mail subject:
-          subject: Github Actions test e-mail
+          subject: DHMZ upozorenje
           # Required recipients' addresses:
           to: ${{secrets.GMAIL_ADDRESS}}
           # Required sender full name (address can be skipped):
@@ -48,7 +48,7 @@ jobs:
           # Optional plain body:
           # body: Build job of ${{github.repository}} completed successfully!
           # Optional HTML body read from file:
-          html_body: file://output.txt
+          html_body: file://output.html
           # Optional carbon copy recipients:
           # cc: kyloren@example.com,leia@example.com
           # Optional blind carbon copy recipients:
