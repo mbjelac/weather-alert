@@ -1,4 +1,4 @@
-# Automated DHMZ wheather alert
+# Automated DHMZ weather alert
 
 DHMZ - the Croatian meteorological society - doesn't have an automated way of sending weather alerts. I suppose the weather in Croatia has not been so critical so this hasn't been so important.
 
