@@ -1,5 +1,807 @@
-<test>
-    <just>
-        <testing>Foo!</testing>
-    </just>
-</test>
+<?xml version="1.0" encoding="UTF-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>2.49.0.0.191.0.HR.240702075106.LDZM</identifier>
+    <sender>https://meteo.hr</sender>
+    <sent>2024-07-02T07:51:06+02:00</sent>
+    <status>Actual</status>
+    <msgType>Alert</msgType>
+    <scope>Public</scope>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T08:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine &gt; 70 %</description>
+        <instruction>  BUDITE NA OPREZU zbog mogućih jačih grmljavinskih nevremena. Posebno pripazite u izloženim područjima kao što su planine, šume i livade odnosno otvoreni tereni. Mogući su prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Osječka regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR005</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T08:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally severe thundershowers. Lightning risk &gt; 70 %</description>
+        <instruction>  STAY ALERT for possible heavy thunderstorms. Be especially careful in high-exposure areas such as mountains, forests, meadows and open grounds. Interruptions in outdoor activities are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Osijek region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR005</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T05:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine &gt; 50 %</description>
+        <instruction>  BUDITE NA OPREZU zbog mogućih jačih grmljavinskih nevremena. Posebno pripazite u izloženim područjima kao što su planine, šume i livade odnosno otvoreni tereni. Mogući su prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Gospićka regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR004</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T05:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally severe thundershowers. Lightning risk &gt; 50 %</description>
+        <instruction>  STAY ALERT for possible heavy thunderstorms. Be especially careful in high-exposure areas such as mountains, forests, meadows and open grounds. Interruptions in outdoor activities are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Gospić region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR004</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T15:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine &gt; 50 %</description>
+        <instruction>  BUDITE NA OPREZU zbog mogućih jačih grmljavinskih nevremena. Posebno pripazite u izloženim područjima kao što su planine, šume i livade odnosno otvoreni tereni. Mogući su prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Kninska regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR001</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T15:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally severe thundershowers. Lightning risk &gt; 50 %</description>
+        <instruction>  STAY ALERT for possible heavy thunderstorms. Be especially careful in high-exposure areas such as mountains, forests, meadows and open grounds. Interruptions in outdoor activities are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Knin region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR001</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Podno Velebita olujni udari bure. Najjači udari vjetra &gt; 65 km/h</description>
+        <instruction>  BUDITE NA OPREZU zbog krhotina koje lete nošene jakim vjetrom. Mogući su lokalizirani prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Riječka regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR006</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Gale force gusts of bura (NE wind) in Velebit region. Maximum gust speed &gt; 65 km/h</description>
+        <instruction>  STAY ALERT for debris carried by strong winds. Debris and tree branches carried by the wind may cause localised interruptions in outdoor activities.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Rijeka region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR006</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T07:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Moguće grmljavinsko nevrijeme. Vjerojatnost grmljavine &gt; 70 %</description>
+        <instruction>  BUDITE NA OPREZU zbog mogućih jačih grmljavinskih nevremena. Posebno pripazite u izloženim područjima kao što su planine, šume i livade odnosno otvoreni tereni. Mogući su prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Riječka regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR006</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T07:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally thunderstorm possible. Lightning risk &gt; 70 %</description>
+        <instruction>  STAY ALERT for possible heavy thunderstorms. Be especially careful in high-exposure areas such as mountains, forests, meadows and open grounds. Interruptions in outdoor activities are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Rijeka region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR006</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T15:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Moguće grmljavinsko nevrijeme. Vjerojatnost grmljavine &gt; 50 %</description>
+        <instruction>  BUDITE NA OPREZU zbog mogućih jačih grmljavinskih nevremena. Posebno pripazite u izloženim područjima kao što su planine, šume i livade odnosno otvoreni tereni. Mogući su prekidi u aktivnostima na otvorenom.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Splitska regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR008</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T15:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally thunderstorm possible. Lightning risk &gt; 50 %</description>
+        <instruction>  STAY ALERT for possible heavy thunderstorms. Be especially careful in high-exposure areas such as mountains, forests, meadows and open grounds. Interruptions in outdoor activities are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Split region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR008</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Narančasto upozorenje za grmljavinsku oluju</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Severe</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T03:00:00+02:00</onset>
+        <expires>2024-07-02T18:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Moguće grmljavinsko nevrijeme. Vjerojatnost grmljavine &gt; 70 %</description>
+        <instruction>  BUDITE SPREMNI na jača grmljavinska nevremena koja mogu prouzročiti veliku štetu i zaštitite se od munja. Moguća su oštećenja na imovini te na drveću. Moguće su lokalne bujične poplave, olujni udari vjetra i tuča. Mogući su prekidi u aktivnostima na otvorenom te u prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>3; orange; Severe</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Dubrovačka regija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR007</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Orange thunderstorm warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Severe</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T03:00:00+02:00</onset>
+        <expires>2024-07-02T18:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally thunderstorm possible. Lightning risk &gt; 70 %</description>
+        <instruction>  BE PREPARED for heavy thunderstorms that may cause heavy damage, and protect yourself from lightning. Property damage and tree damage are possible. Local flash floods, storm gusts are hail are possible. Interruptions in outdoor activities and in  traffic are possible.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>3; orange; Severe</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>3; Thunderstorm</value>
+        </parameter>
+        <area>
+            <areaDesc>Dubrovnik region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR007</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T17:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Mjestimice pojačana, tijekom dana na jugu područja moguća i jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Zapadna obala Istre</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR801</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T17:00:00+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally fresh, during the day on the south of area possible strong NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>West Istrian coast</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR801</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Pojačana, mjestimice jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Kvarner i Kvarnerić</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR802</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Fresh, locally strong NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Kvarner i Kvarneric</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR802</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Pojačana i jaka, mjestimice moguća i vrlo jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Velebitski kanal</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR803</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Fresh and strong, locally possible near gale NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Velebit channel</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR803</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Mjestimice pojačana, poslijepodne i prema večeri moguća i jaka bura. Još u noći mjestimice jak sjeverozapadnjak. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Sjeverna Dalmacija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR804</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally fresh, in the afternoon and towards evening possible strong NE wind. During the night locally strong NW wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>North Dalmatia region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR804</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Mjestimice jak, prolazno moguć i vrlo jak sjeverozapadni vjetar. Prema večeri mjestimice pojačana do jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Srednja Dalmacija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR805</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally strong, possible near gale NW wind. Towards evening locally fresh and strong NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Middle Dalmatia region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR805</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>hr</language>
+        <category>Met</category>
+        <event>Žuto upozorenje za vjetar</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Mjestimice jako jugo u okretanju na jak, prolazno moguć i vrlo jak sjeverozapadnjak. Avečer mjestimice pojačana bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)</description>
+        <instruction>
+            UTJECAJ: Iako su uobičajene i česte u ovoj regiji, očekuje se lokalno ili potencijalno opasne brzine vjetra koje uzrokuju valove rizične za manja plovila.
+            Neiskusni pomorci, posebno oni koji upravljaju manjim brodovima, trebali bi izbjegavati plovidbu u tim uvjetima i obratiti pozornost na pomorsku prognozu te pri planiranju razmotriti vjetar i uvjete na moru. Moguće je da neki katamarani neće ploviti pa ako putujete, pratite informacije o prometu.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>Južna Dalmacija</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR806</value>
+            </geocode>
+        </area>
+    </info>
+    <info>
+        <language>en</language>
+        <category>Met</category>
+        <event>Yellow wind warning</event>
+        <responseType>None</responseType>
+        <urgency>Future</urgency>
+        <severity>Moderate</severity>
+        <certainty>Likely</certainty>
+        <onset>2024-07-02T00:00:00+02:00</onset>
+        <expires>2024-07-02T23:59:59+02:00</expires>
+        <senderName>DHMZ Državni hidrometeorološki zavod</senderName>
+        <description>Locally strong SE wind turning to strong, possible near gale NW. In the evening locally fresh NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)</description>
+        <instruction>  IMPACT: Although rather usual in this region, locally or potentially dangerous wind speeds are expected to produce dangerous wave conditions to small crafts. Inexperienced mariners, especially those operating smaller vessels, should avoid navigating in these conditions.
+            Mariners should pay close attention to the marine forecast  and consider wind and sea conditions in planning. It is possible that some ferry lines will not operate so follow traffic information if travelling.
+        </instruction>
+        <parameter>
+            <valueName>awareness_level</valueName>
+            <value>2; yellow; Moderate</value>
+        </parameter>
+        <parameter>
+            <valueName>awareness_type</valueName>
+            <value>1; Wind</value>
+        </parameter>
+        <area>
+            <areaDesc>South Dalmatia region</areaDesc>
+            <geocode>
+                <valueName>EMMA_ID</valueName>
+                <value>HR806</value>
+            </geocode>
+        </area>
+    </info>
+</alert>
