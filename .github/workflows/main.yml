@@ -4,11 +4,26 @@ on:
   workflow_dispatch:
 
 jobs:
-  send-email:
+  parse-xml:
     runs-on: ubuntu-latest
     steps:
-      - name: Download alerts file
-        run: echo Hello, world!
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Parse XML
+        id: getxml
+        uses: mavrosxristoforos/get-xml-info@1.0
+        with:
+          xml-file: 'test.xml'
+          # xpath: '//version'
+      - name: Output xml
+        run:
+          echo "The parsed xml is: ${{ steps.getxml.outputs.info }}"
+
+
+  send-email:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
