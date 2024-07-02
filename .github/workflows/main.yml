@@ -14,7 +14,7 @@ jobs:
         uses: mavrosxristoforos/get-xml-info@1.0
         with:
           xml-file: 'test.xml'
-          xpath: "//info[language='hr' and severity='Severe' and area/areaDesc[contains(text(),'Dubrov')]]/(event|onset|description|instructions)/text()"
+          xpath: "//info[language='hr' and severity='High' and area/areaDesc[contains(text(),'Zagreb')]]/event/text() | //info[language='hr' and severity='High' and area/areaDesc[contains(text(),'Zagreb')]]/onset/text() | //info[language='hr' and severity='High' and area/areaDesc[contains(text(),'Zagreb')]]/description/text() | //info[language='hr' and severity='High' and area/areaDesc[contains(text(),'Zagreb')]]/instructions/text()"
       - name: Output xml
         run: |
           echo "The parsed xml is: ${{ steps.getxml.outputs.info }}"
