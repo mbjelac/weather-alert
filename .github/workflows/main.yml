@@ -3,6 +3,11 @@ name: Check & send alert
 on:
   workflow_dispatch:
 
+env:
+  severity: Severe
+  region: Dubrov
+  language: hr
+
 jobs:
   parse-and-send-alerts:
     runs-on: ubuntu-latest
@@ -12,7 +17,7 @@ jobs:
       - name: Parse XML
         id: parse
         run: |
-          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "<p><h1>\(.event)</h1><p><b>\(.onset)</b></p><p>\(.description)</p><p>\(.instruction)</p></p>"' alerts.xml > output.html
+          yq -oy '.alert.info[] | select(.language == "${{ env.language }}" and .severity == "${{ env.severity }}" and (.area.areaDesc | contains("${{ env.region }}"))) | "<p><h1>\(.event)</h1><p><b>\(.onset)</b></p><p>\(.description)</p><p>\(.instruction)</p></p>"' alerts.xml > output.html
           size=$(stat -c%s output.html)
           echo "File size: $size"
           echo "size=$size" >> $GITHUB_OUTPUT
