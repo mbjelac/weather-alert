@@ -7,12 +7,12 @@ jobs:
   parse-and-send-alerts:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Download XML
+        run: curl https://meteo.hr/upozorenja/cap_hr_today.xml > alerts.xml
       - name: Parse XML
         id: parse
         run: |
-          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "<p><h1>\(.event)</h1><p><b>\(.onset)</b></p><p>\(.description)</p><p>\(.instruction)</p></p>"' test.xml > output.html
+          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "<p><h1>\(.event)</h1><p><b>\(.onset)</b></p><p>\(.description)</p><p>\(.instruction)</p></p>"' alerts.xml > output.html
           size=$(stat -c%s output.html)
           echo "File size: $size"
           echo "size=$size" >> $GITHUB_OUTPUT
