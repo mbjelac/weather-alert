@@ -25,6 +25,7 @@ jobs:
           size=$(stat -c%s output.html)
           echo "File size: $size"
           echo "size=$size" >> $GITHUB_OUTPUT
+          echo "<p><a href='https://meteo.hr/naslovnica-upozorenja.php?tab=upozorenja'>Vidi detalje</a></p>" >> output.html
           cat output.html
       - name: Send mail
         if: steps.parse.outputs.size > 45
