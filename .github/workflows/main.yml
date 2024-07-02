@@ -18,7 +18,7 @@ jobs:
           echo "size=$size" >> $GITHUB_OUTPUT
           cat output.txt
       - name: Send mail
-        if: steps.parse.size > 45
+        if: steps.parse.outputs.size > 45
         uses: dawidd6/action-send-mail@v3
         with:
           # Specify connection via URL (replaces server_address, server_port, secure,
