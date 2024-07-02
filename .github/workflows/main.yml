@@ -10,14 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Parse XML
-        id: getxml
-        uses: mavrosxristoforos/get-xml-info@1.0
-        with:
-          xml-file: 'test.xml'
-          xpath: "/alert/info[language='hr']/*[self::event or self::onset or self::description or self::instruction]/text()"
-      - name: Output xml
         run: |
-          echo "The parsed xml is: ${{ steps.getxml.outputs.info }}"
+          yq -oy '.alert.info[] | select(.language == "hr" and .severity == "Severe" and (.area.areaDesc | contains("Dubrov"))) | "Title: \(.event)\nDate: \(.onset)\nDescription: \(.description)\nInstructions: \(.instruction)\n"' test.xml > output.txt
+          isEmpty=[$(stat -c%s output.txt) -le 45]
+          if [isEmpty]; then rm output.txt elif cat output.txt fi
 
   send-email:
     if: false
