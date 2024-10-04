@@ -1,8 +1,8 @@
 name: Check & send alert
 
 on:
-  schedule:
-    - cron: '0 */1 * * *' # hourly
+#  schedule:
+#    - cron: '0 */1 * * *' # hourly
   workflow_dispatch:
 
 env:
